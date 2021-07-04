@@ -87,6 +87,9 @@ function draw() {
     let objects = detections[label];
     for (let i = objects.length - 1; i >= 0; i--) {
       let object = objects[i];
+      
+      //removing line 93 will also detact person 
+      
       if (object.label !== "person") {
         stroke(0, 255, 0);
         strokeWeight(4);
